@@ -1,11 +1,6 @@
----
-layout: "gitcrypt"
-page_title: "gitcrypt: gitcrypt_encrypted_file"
-description: |-
-  Read and decrypt the content of the encrypted with git-crypt file.
----
+# gitcrypt\_encrypted\_file
 
-# gitcrypt_encrypted_file
+Read and decrypt the content of the file encrypted with git-crypt.
 
 Use this data source to read and decrypt file encrypted with git-crypt.
 For decryption file will be used key provided to `provider`.   

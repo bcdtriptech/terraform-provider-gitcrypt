@@ -1,15 +1,6 @@
----
-layout: "gitcrypt"
-page_title: "Provider: gitcrypt"
-description: |-
-  The gitcrypt provider is used to read files encrypted with git-crypt.
----
+# Gitcrypt Provider
 
-# gitcrypt Provider
-
-The gitcrypt provider is used to read files encrypted with git-crypt.
-
-Use the navigation to the left to read about the available resources.
+The gitcrypt provider is used to read files encrypted with [git-crypt](https://github.com/AGWA/git-crypt#git-crypt---transparent-file-encryption-in-git).
 
 ## Example Usage
 
