@@ -20,8 +20,21 @@ var3: value3
 ## Example Usage
 
 ```hcl
+# Read encrypte file:
 data "gitcrypt_encrypted_file" "example" {
   file_path = "./test-data/encrypted_vars.yml"
+}
+
+# Use value from encrypted file (2 formats available)
+resource "db_instance" "default {
+  ...
+  password = data.gitcrypt_encrypted_file.example.secrets.db_password
+}
+
+resource "aws_ssm_parameter" "db_password" {
+  name   = "db_password"
+  type   = "SecureString"
+  value  = data.gitcrypt_encrypted_file.example.secrets["db_password"]
 }
 ```
 

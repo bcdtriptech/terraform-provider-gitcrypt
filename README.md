@@ -8,13 +8,13 @@ This is a simple terraform provider which can decrypt files encrypted with [git-
 
 # Using gitcrypt provider
 
-To use this provider you need get git-crypt key of you repository in base64 format:
+To use this provider you need to get a git-crypt key from your repository in base64 format:
 ```
   $ cd ./your-repository/
   $ git-crypt unlock
   $ base64 -i .git/git-crypt/keys/default
 ```
-The example of output:
+Output example:
 ```
   AEdJVENSWVBUS0VZAAAAAgAAAAAAAAABAAAABAAAAAAAAAADAAAAIDJ6yMP6EdHmYJ2VyFa1LU1zitt4G4gJdD3O1/8L1ZZEAAAABQAAAEAtubx4wwVHvOAIuz/K7fvrtFFUBzsA2Dl4AGuyK3WGOd1v1HuDFW6tN65V4D3j+M4+0ly25+xYukN7Qdw6ZjDJAAAAAA==
 ```
@@ -26,7 +26,7 @@ You also can set it as parameter `gitcrypt_key_base64` in provider section like 
       gitcrypt_key_base64 = "AEdJVENSWVBUS0VZAAAAAgAAAAAAAAABAAAABAAAAAAAAAADAAAAIDJ6yMP6EdHmYJ2VyFa1LU1zitt4G4gJdD3O1/8L1ZZEAAAABQAAAEAtubx4wwVHvOAIuz/K7fvrtFFUBzsA2Dl4AGuyK3WGOd1v1HuDFW6tN65V4D3j+M4+0ly25+xYukN7Qdw6ZjDJAAAAAA=="
   }
 ```
-WARNING! This method is NOT secure and NOT recommended because everyone who know your `gitcrypt_key_base64` can decrypt you secret files!
+WARNING! This method is NOT secure and NOT recommended because everyone who knows your `gitcrypt_key_base64` can decrypt you secret files!
 
 # Encrypted file format
 
