@@ -33,3 +33,7 @@ WARNING! This method is NOT secure and NOT recommended because everyone who know
 gitcrypt terraform provider can parse simple file which contain `key: value` pairs like `var1: value1`.
 
 You can see [ENCRYPTED](gitcrypt/test-data/encrypted_vars.yml) and [DECRYPTED](gitcrypt/test-data/decrypted_vars.yml) files example.  
+
+# Contributing
+
+If you're having trouble using gitcrypt provider, create a [Github issue](https://github.com/bcdtriptech/terraform-provider-gitcrypt/issues) or open a [pull request](https://github.com/bcdtriptech/terraform-provider-gitcrypt/pulls).
